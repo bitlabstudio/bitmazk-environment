@@ -3,6 +3,7 @@ cd $HOME
 
 echo "Installing important tools"
 sudo apt-get install xchat
+sudo apt-get install xclip
 sudo apt-get install curl
 sudo apt-get install gnome-do
 sudo apt-get install git
