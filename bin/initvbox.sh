@@ -69,3 +69,4 @@ sudo apt-get install ruby
 sudo apt-get install rubygems1.8
 sudo gem install haml
 sudo apt-get install csstidy
+sudo apt-get install libhaml-ruby1.8
