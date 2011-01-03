@@ -58,6 +58,7 @@ cd opt
 hg clone http://crunchyfrog.googlecode.com/hg/ crunchyfrog
 sudo pip install configobj
 sudo pip install sqlparse
+sudo pip install mysql-python
 cd $HOME
 mkdir bin
 cd bin
