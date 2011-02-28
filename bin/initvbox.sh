@@ -17,6 +17,10 @@ sudo apt-get install libjpeg62 libjpeg-dev
 sudo apt-get install libfreetype6 libfreetype6-dev
 sudo apt-get install libmysqlclient-dev python2.6-dev
 
+echo "Installing important libraries needed for lxml" 
+sudo apt-get install libxslt1-dev
+sudo apt-get install libxml2-dev
+
 echo "Installing python2.7"
 sudo apt-get install python2.7
 sudo apt-get install python2.7-dev
