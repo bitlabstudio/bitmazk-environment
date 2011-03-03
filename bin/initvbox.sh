@@ -9,6 +9,7 @@ sudo apt-get install gnome-do
 sudo apt-get install git
 sudo apt-get install meld
 sudo apt-get install mercurial
+sudo apt-get install gettext
 
 echo "Installing important libraries needed for PIL and mysql-python"
 sudo apt-get install build-essential
