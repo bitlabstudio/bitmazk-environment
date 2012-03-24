@@ -2,10 +2,8 @@
 cd $HOME
 
 echo "Installing important tools"
-sudo apt-get install xchat
 sudo apt-get install xclip
 sudo apt-get install curl
-sudo apt-get install gnome-do
 sudo apt-get install git
 sudo apt-get install meld
 sudo apt-get install mercurial
@@ -37,24 +35,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 echo "export WORKON_HOME=~/Envs" >> .bashrc
 echo "source /usr/local/bin/virtualenvwrapper.sh" >> .bashrc
 
-echo "Installing node.js"
-cd $HOME/Downloads
-wget http://nodejs.org/dist/node-v0.3.2.tar.gz
-tar -zxvf node-v0.3.2.tar.gz
-cd node-v0.3.2
-./configure
-make
-sudo make install
-cd ..
-rm -rf node*
-sudo chown -R $USER /usr/local/{share/man,bin,lib/node}
-curl http://npmjs.org/install.sh | sh
-cd $HOME/Downloads
-rm -rf npm
-
 echo "Installing databases"
-sudo apt-get install couchdb
 sudo apt-get install mysql-server
+sudo apt-get install postgresql pgadmin3
 
 echo "Installing crunchyfrog"
 cd $HOME
@@ -68,8 +51,6 @@ cd $HOME
 mkdir bin
 cd bin
 ln -s $HOME/opt/crunchyfrog/crunchyfrog
-cd $HOME
-echo "export PATH=$PATH:/home/martin/bin" >> .bashrc
 
 echo "Installing SASS & csstidy"
 sudo apt-get install ruby
@@ -77,3 +58,6 @@ sudo apt-get install rubygems1.8
 sudo gem install haml
 sudo apt-get install csstidy
 sudo apt-get install libhaml-ruby1.8
+
+cd $HOME
+echo "export PATH=$HOME/bin/:PATH" >> .bashrc
