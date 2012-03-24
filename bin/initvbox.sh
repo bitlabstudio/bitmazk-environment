@@ -60,4 +60,4 @@ sudo apt-get install csstidy
 sudo apt-get install libhaml-ruby1.8
 
 cd $HOME
-echo "export PATH=$HOME/bin/:PATH" >> .bashrc
+echo "export PATH=$HOME/bin/:$PATH" >> .bashrc
